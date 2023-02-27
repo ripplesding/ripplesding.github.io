@@ -1,25 +1,121 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-      <meta charset="UTF-8">
+      <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>ripplesding</title>
+      <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+    
+        header {
+          background-color: #333;
+          color: #fff;
+          padding: 8px;
+          text-align: center;
+        }
+    
+        h1 {
+          margin: 0;
+          font-size: 36px;
+        }
+    
+        nav {
+          background-color: #f2f2f2;
+          padding: 10px;
+          text-align: center;
+          font-size: 20px;
+          font-weight: bold;
+          border-bottom: 2px solid #333;
+        }
+    
+        nav a {
+          padding: 10px;
+          color: #333;
+          text-decoration: none;
+          margin: 0 10px;
+        }
+    
+        nav a:hover {
+          background-color: #333;
+          color: #fff;
+        }
+    
+        section {
+          padding: 5px;
+        }
+    
+        h2 {
+          font-size: 22px;
+          margin-top: 0;
+        }
+    
+        ul {
+          list-style: none;
+          padding: 0;
+        }
+    
+        li {
+          margin-bottom: 10px;
+        }
+    
+        li span {
+          font-weight: bold;
+        }
+    
+        .project {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 20px;
+        }
+    
+        .project .card {
+          margin: 10px;
+          width: 300px;
+          border: 1px solid #ccc;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+          padding: 10px;
+          border-radius: 5px;
+        }
+    
+        .project .card img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 5px;
+          margin-bottom: 10px;
+        }
+    
+        .project .card h3 {
+          margin: 0;
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+    
+        .project .card p {
+          font-size: 16px;
+          margin: 0;
+        }
+    
+        @media screen and (max-width: 600px) {
+          nav {
+            font-size: 16px;
+          }
+    
+          .project .card {
+            width: 100%;
+          }
+        }
+      </style>
     </head>
     <body>
       <header>
         <h1 align = "center">Welcome to ripplesding's website</h1>
-        <nav>
-          <ul>
-            <li><a href="#about">关于我</a></li>
-            <li><a href="#education">教育背景</a></li>
-            <li><a href="#experience">工作经验</a></li>
-            <li><a href="#projects">项目经历</a></li>
-            <li><a href="#skills">技术栈学习</a></li>
-            <li><a href="#contact">联系我</a></li>
-          </ul>
-        </nav>
       </header>
-      <main>
+      <main align = "center">
         <section id="about">
           <h2>关于我</h2>
           <p>我是一个热爱编程和设计的人，喜欢探索新技术和解决问题。</p>
@@ -27,40 +123,41 @@
         <section id="education">
           <h2>教育背景</h2>
           <ul>
-            <li>华中科技大学大学 硕士</li>
-            <li>重庆大学 本科</li>
+            <li>2016.09-2020.07 重庆大学 本科</li>
+            <li>2020.09-2023.07 华中科技大学大学 硕士</li>
           </ul>
         </section>
         <section id="experience">
           <h2>工作经验</h2>
           <ul>
-            <li>Alibaba 后端工程师 2023年7月起</li>
+            <li>2023.07- Alibaba 后端工程师</li>
           </ul>
         </section>
         <section id="projects">
           <h2>我的作品</h2>
           <ul>
-            <li><a href="https://github.com/ripplesding/computeITObyCPUGPU">GPU for ITO(Isogeometric Topology Optimization)</a></li>
+            <li><span>硕士毕业项目：</span><a href="https://github.com/ripplesding/computeITObyCPUGPU">GPU compute for ITO(Isogeometric Topology Optimization)</a></li>
           </ul>
         </section>
         <section id="skills">
             <h2>技术栈学习</h2>
             <ul>
-              <li><a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzk0MjE3NDE0Ng==&action=getalbum&album_id=2123743679373688834&scene=173&from_msgid=2247500496&from_itemidx=1&count=3&nolastread=1#wechat_redirect
-                ">Linux 0.11</a></li>
-            </ul>
+              <li><span>编程语言：</span>程序</li>
+              <li><span>底层原理：</span><a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzk0MjE3NDE0Ng==&action=getalbum&album_id=2123743679373688834&scene=173&from_msgid=2247500496&from_itemidx=1&count=3&nolastread=1#wechat_redirect
+                ">进程</a>，内存，网络</li>
+              </ul>
           </section>
         <section id="contact">
           <h2>联系我</h2>
           <p>如果您对我的经历和能力感兴趣，欢迎给我发送邮件或添加我的社交账号。</p>
           <ul>
-            <li>邮箱：<a href="mailto:17725026859@163.com">ripplesding‘s Email</a></li>
-            <li>GitHub账号：<a href="https://github.com/ripplesding">ripplesding</a></li>
+            <li><span>邮箱：</span><a href="mailto:17725026859@163.com">ripplesding‘s email</a></li>
+            <li><span>GitHub账号：</span><a href="https://github.com/ripplesding">ripplesding</a></li>
           </ul>
         </section>
       </main>
       <footer>
-        <p>版权所有 © 2023 - 我的个人主页</p>
+        <p align = "center">版权所有 © 2023 - ripplesding</p>
       </footer>
     </body>
     </html>
